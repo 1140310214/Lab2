@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+  <package name="wwfy.action.user" extends="struts-default">
+    <action name="loginUser" class="wwfy.action.user.UserAction">
+      <result name="success">/HelloWorld.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+  <action name="booklist" class="wwfy.action.user.books">
+      <result name="success">/bookinfor.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+  <action name="choose" class="wwfy.action.user.chooseb">
+      <result name="success">/HelloWorld.jsp</result>
+    </action>
+  <action name="delete" class="wwfy.action.user.deleteb">
+      <result name="success">/SayHello.jsp</result>
+      <result name="error">/error.jsp</result>
+    </action>
+   <action name="newlogin" class="wwfy.action.user.newlog">
+      <result name="success">/SayHello.jsp</result>
+    </action>
+  </package>
+</struts>
